@@ -22,18 +22,17 @@ container.addEventListener("click", (e) => {
 movieCategory.addEventListener("change", (e) => {
 
         if(e.target.value == "10"){
-        film.innerText = "Avengers: Endgame ($10)";
-        
-        
+        film.innerText = "Avengers: Endgame";
+          
     }
         else if(e.target.value == "12"){
-        film.innerText = "Joker ($12)";
+        film.innerText = "Joker";
     }
         else if(e.target.value == "8"){
-        film.innerText = "Toy Story 4 ($8)";
+        film.innerText = "Toy Story 4";
     }
         else if(e.target.value == "9"){
-        film.innerText = "The Lion King ($9)";
+        film.innerText = "The Lion King";
     }
     
     calculateTotal();
@@ -85,7 +84,7 @@ function getFromLocaleStorage(){
 
     if(selectedMovieIndex != null) {
         movieCategory.selectedIndex = selectedMovieIndex;
-        film.innerText = movieCategory[selectedMovieIndex].innerText
+        film.innerText = movieCategory[selectedMovieIndex].innerText.split("(")[0];
     }
 }
 
