@@ -3,7 +3,7 @@ const count = document.getElementById("count")
 const movieCategory = document.getElementById("movie");
 const film = document.getElementById("film");
 const total = document.getElementById("total");
-const seats = document.querySelectorAll(".seat:not(.reserved)")
+const seats = document.querySelectorAll(".seat:not(.occupied)")
 
 
 getFromLocaleStorage();
